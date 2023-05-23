@@ -1,0 +1,133 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Imprima", sans-serif;
+}
+body {
+  min-height: 100vh;
+
+  background: rgb(24, 41, 122);
+  background: linear-gradient(0deg, rgba(24, 41, 122, 1) 17%, rgba(245, 213, 255, 1) 86%, rgba(255, 213, 249, 1) 100%);
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  margin-top: 40px;
+  width: 400px;
+  height: auto;
+  background-color: white;
+  border-radius: 25px;
+  padding: 16px;
+  box-sizing: content-box;
+  text-align: center;
+  opacity: 0.5;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.99);
+}
+h1 {
+  font-size: 3rem;
+}
+#display {
+  box-sizing: bor;
+  width: 320px;
+  height: auto;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin: auto;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+#inputItem {
+  font-size: 1rem;
+  width: 320px;
+  height: 30px;
+  border: 2px solid black;
+  padding: 2px;
+  border-radius: 10px;
+}
+#wrapItemBox {
+  margin: 5px;
+  display: flex;
+  width: auto;
+  border-radius: 8px;
+  position: relative;
+  border: 2px solid black;
+}
+.itemBox {
+  font-size: 1.5rem;
+  padding: 3px;
+  width: auto;
+  height: 45px;
+  line-height: 45px;
+}
+.btnItemBox {
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  justify-content: end;
+  position: absolute;
+  right: 3px;
+  top: 24px;
+  cursor: pointer;
+}
+.delItemBox {
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  justify-content: end;
+  position: absolute;
+  right: 3px;
+  top: 4px;
+  cursor: pointer;
+}
+.btnItemBox:hover {
+  background-color: green;
+}
+.delItemBox:hover {
+  background-color: red;
+}
+
+#submitItem {
+  margin-top: 10px;
+  width: 75px;
+  height: 25px;
+  border-radius: 8px;
+}
+.hidden {
+  display: none;
+}
+.line {
+  text-decoration: line-through;
+  color: green;
+}
+
+::-webkit-scrollbar {
+  border-radius: 100px;
+  width: 6px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media only screen and (min-width: 600px) {
+  #display {
+    width: 300px;
+  }
+  #box {
+    width: 280px;
+  }
+}
